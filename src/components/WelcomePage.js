@@ -1,8 +1,16 @@
 import React from "react";
+import styled from "styled-components";
+
+const WelcomeWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+`;
 
 export default function WelcomePage() {
   return (
-    <section className="welcome-page">
+    <WelcomeWrapper>
       <header>
         <h1>Welcome to the ultimate fan site!</h1>
         <img
@@ -11,6 +19,6 @@ export default function WelcomePage() {
           alt="rick"
         />
       </header>
-    </section>
+    </WelcomeWrapper>
   );
 }
