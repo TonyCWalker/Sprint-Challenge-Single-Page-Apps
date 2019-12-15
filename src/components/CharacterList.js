@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import SearchForm from "./SearchForm";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -10,7 +13,11 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
+      <SearchForm />
       <h2>TODO: `array.map()` over your state here!</h2>
+      <Nav>
+        <Link to="/">Home</Link>
+      </Nav>
     </section>
   );
 }
